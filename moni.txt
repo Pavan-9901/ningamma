@@ -1,0 +1,35 @@
+#bar chart
+import matplotlib.pyplot as plt
+langs=['c','c++','java','python','php']
+student=[23,17,35,29,12]
+plt.bar(langs,student)
+plt.show()
+
+#line chart
+import matplotlib.pyplot as plt
+emp_count=(3,20,50,200,350,400)
+year=[2014,2015,2016,2017,2018,2019]
+plt.plot(year,emp_count)
+plt.show()
+
+#histogram
+import pandas as pd
+import matplotlib.pyplot as plt
+df = {
+    'marks':[45,78,56,89,34,66,90,55,72,80,38,60,85,48,77]
+}
+df=pd.DataFrame(data)
+
+df['marks'].plot(kind='hist',bins=8,color='skyblue',edgecolor='black')
+plt.xlabel('marks')
+plt.ylabel('number of students')
+plt.title('distribution of marks')
+plt.show()
+
+#piechart
+from matplotlib.plot as plt
+import numpy as np
+
+langs=['cricket','kabaddi','foot ball']
+plt.pie(student,labels=langs,outplt='%1.2f%')
+plt.show()
